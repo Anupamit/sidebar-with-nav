@@ -1,0 +1,96 @@
+[debug] [2022-01-29T07:00:33.292Z] ----------------------------------------------------------------------
+[debug] [2022-01-29T07:00:33.296Z] Command:       /home/anupam/.nvm/versions/node/v14.15.1/bin/node /home/anupam/.nvm/versions/node/v14.15.1/bin/firebase init
+[debug] [2022-01-29T07:00:33.297Z] CLI Version:   10.1.2
+[debug] [2022-01-29T07:00:33.297Z] Platform:      linux
+[debug] [2022-01-29T07:00:33.297Z] Node Version:  v14.15.1
+[debug] [2022-01-29T07:00:33.298Z] Time:          Sat Jan 29 2022 12:30:33 GMT+0530 (India Standard Time)
+[debug] [2022-01-29T07:00:33.298Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-29T07:00:33.306Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-29T07:00:33.307Z] > authorizing via signed-in user (anupamit011@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/anupam/helloworld/sidebarwithnav
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-29T07:03:41.084Z] > refreshing access token with scopes: []
+[debug] [2022-01-29T07:03:41.087Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-29T07:03:42.429Z] <<< HTTP RESPONSE 400 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 29 Jan 2022 07:03:42 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-29T07:03:42.437Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-01-29T07:03:44.072Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2022-01-29T07:03:44.072Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2022-01-29T07:03:44.074Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-01-29T07:03:44.885Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async getProjectPage (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/management/projects.js:233:17)
+    at async getFirebaseProjectPage (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/management/projects.js:250:23)
+    at async selectProjectInteractively (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/management/projects.js:95:41)
+    at async Object.doSetup [as project] (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2022-01-29T07:05:30.518Z] ----------------------------------------------------------------------
+[debug] [2022-01-29T07:05:30.521Z] Command:       /home/anupam/.nvm/versions/node/v14.15.1/bin/node /home/anupam/.nvm/versions/node/v14.15.1/bin/firebase init
+[debug] [2022-01-29T07:05:30.521Z] CLI Version:   10.1.2
+[debug] [2022-01-29T07:05:30.522Z] Platform:      linux
+[debug] [2022-01-29T07:05:30.522Z] Node Version:  v14.15.1
+[debug] [2022-01-29T07:05:30.522Z] Time:          Sat Jan 29 2022 12:35:30 GMT+0530 (India Standard Time)
+[debug] [2022-01-29T07:05:30.523Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-29T07:05:30.530Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-29T07:05:30.531Z] > authorizing via signed-in user (anupamit011@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/anupam/helloworld/sidebarwithnav
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-29T07:05:36.116Z] > refreshing access token with scopes: []
+[debug] [2022-01-29T07:05:36.120Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-29T07:05:36.698Z] <<< HTTP RESPONSE 400 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sat, 29 Jan 2022 07:05:36 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-29T07:05:36.701Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-01-29T07:05:37.716Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2022-01-29T07:05:37.716Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2022-01-29T07:05:37.717Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-01-29T07:05:39.458Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at module.exports (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/apiv2.js:241:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async getProjectPage (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/management/projects.js:233:17)
+    at async getFirebaseProjectPage (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/management/projects.js:250:23)
+    at async selectProjectInteractively (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/management/projects.js:95:41)
+    at async Object.doSetup [as project] (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/init/features/project.js:88:27)
+    at async init (/home/anupam/.nvm/versions/node/v14.15.1/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
